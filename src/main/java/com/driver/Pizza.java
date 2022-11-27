@@ -27,7 +27,7 @@ public class Pizza {
             this.price = 400;
             this.extraTopping=120;
         }
-        bill = "Base price of The Pizza "+price +"\n";
+        bill = "Base Price Of The Pizza: "+price +"\n";
 
     }
 
@@ -63,10 +63,10 @@ public class Pizza {
         // your code goes here
         if(isBill) {
             isBill=false;
-            if (addCheese == false) bill = bill + "Extra Cheese Added: 80" + "\n";
-            if (addTopping == false) bill = bill + "Extra Toppings Added: " + extraTopping + "\n";
-            if (addTakeaway == false) bill = bill + "Paperbag Added: 20\n";
-            bill = bill + "Total price: " + price + "\n";
+            if (addCheese == false) this.bill = this.bill + "Extra Cheese Added: 80" + "\n";
+            if (addTopping == false) this.bill = this.bill + "Extra Toppings Added: " + this.extraTopping + "\n";
+            if (addTakeaway == false) this.bill = this.bill + "Paperbag Added: 20"  + "\n";
+            this.bill = this.bill + "Total Price: "+this.price + "\n";
         }
         return this.bill;
     }
